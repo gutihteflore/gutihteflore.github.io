@@ -1,0 +1,440 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Travaux de formation – Flore Thouanguem Gutihte</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: same project-file identity as the main portfolio; deliverables grouped by project phase, each coded by phase (L = launch, P = planning, E = execution) */
+:root{
+  --bg:#f4f6f5; --surface:#ffffff; --ink:#172427; --muted:#56666a; --line:#d9e0de;
+  --accent:#1d6b58; --accent-soft:#dcebe5; --gold:#a8730f;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101718; --surface:#172123; --ink:#e6eeec; --muted:#9aaaa7; --line:#2a3739;
+  --accent:#5fc0a3; --accent-soft:#1d3530; --gold:#e0b04f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101718; --surface:#172123; --ink:#e6eeec; --muted:#9aaaa7; --line:#2a3739;
+  --accent:#5fc0a3; --accent-soft:#1d3530; --gold:#e0b04f; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+.wrap{max-width:900px;margin:0 auto}
+html:not([data-lang="en"]) [data-l="en"], html[data-lang="en"] [data-l="fr"]{display:none!important}
+a{color:var(--accent);font-weight:600}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-block:20px 0}
+.crumbs{display:flex;gap:16px;flex-wrap:wrap}
+.back{font-size:14px;text-decoration:none}
+.back:hover{text-decoration:underline}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.lang button{font:600 13px var(--body);letter-spacing:.06em;border:0;background:none;color:var(--muted);padding:7px 14px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+
+header{padding-block:40px 32px;border-bottom:2px solid var(--ink)}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-stretch:78%;font-weight:800;font-size:clamp(2.4rem,7vw,4.2rem);line-height:.98;margin:12px 0 16px;text-wrap:balance}
+.intro{max-width:62ch;margin:0 0 12px}
+.case{max-width:62ch;margin:0;color:var(--muted)}
+
+.phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:24px}
+.phases a{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;min-width:0}
+.phases a:hover{border-color:var(--accent)}
+.phases .n{display:block;font:700 1.6rem var(--display);color:var(--accent);line-height:1.1;font-variant-numeric:tabular-nums}
+.phases .t{display:block;font-weight:600;font-size:15px}
+.phases .s{display:block;font-size:13px;color:var(--muted)}
+
+section{padding-block:44px 8px}
+h2{font-family:var(--display);font-stretch:85%;font-weight:700;font-size:1.7rem;margin:0 0 6px}
+.lede{color:var(--muted);margin:0 0 20px;max-width:65ch}
+
+.wp{display:grid;grid-template-columns:72px 1fr;gap:20px;padding-block:24px;border-top:1px solid var(--line)}
+.wp:first-of-type{border-top:0}
+.code{font:500 13px var(--mono);color:var(--accent);padding-top:6px}
+.wp>div{min-width:0}
+.wp h3{font-family:var(--display);font-stretch:90%;font-weight:700;font-size:1.25rem;margin:0 0 6px;text-wrap:balance}
+.wp p{margin:0 0 12px;max-width:65ch}
+.wp ul.did{margin:0 0 12px;padding-left:18px;max-width:65ch}
+.wp ul.did li{margin-bottom:4px}
+.kpis{display:flex;flex-wrap:wrap;gap:10px 24px;margin:0 0 12px;padding:0;list-style:none}
+.kpis li{font-size:14px;color:var(--muted)}
+.kpis b{font:600 1.05rem var(--body);color:var(--ink);font-variant-numeric:tabular-nums;margin-right:4px}
+.tags{font-size:13px;color:var(--muted)}
+.tags b{color:var(--ink);font-weight:600}
+
+.budget{margin:4px 0 14px;max-width:480px}
+.budget .row{display:grid;grid-template-columns:minmax(0,150px) 1fr 74px;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.budget .row+.row{margin-top:6px}
+.budget .track{height:10px;background:var(--line);border-radius:2px;overflow:hidden}
+.budget .fill{height:100%;background:var(--accent)}
+.budget .row.res .fill{background:var(--gold)}
+.budget .val{font:500 13px var(--mono);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+
+.tbl{overflow-x:auto;margin:0 0 14px;max-width:100%}
+.tbl table{border-collapse:collapse;font-size:13px;min-width:460px}
+.tbl th,.tbl td{border:1px solid var(--line);padding:6px 8px;text-align:center}
+.tbl th{font-weight:600;background:var(--surface)}
+.tbl td:first-child,.tbl th:first-child{text-align:left}
+.tbl .a{color:var(--gold);font-weight:700}
+.tbl .r{color:var(--accent);font-weight:700}
+
+.roam{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
+.roam li{font-size:13px;padding:4px 10px;border-radius:4px;background:var(--accent-soft)}
+.roam b{font-family:var(--mono);font-weight:500;margin-right:4px}
+
+.doc{margin:4px 0 14px}
+.doc img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px;background:#fff}
+.doc.port{max-width:300px}
+.doc.land{max-width:560px}
+.doc a:hover img{border-color:var(--accent)}
+.doc figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.note{margin:36px 0 0;padding:16px 18px;border-left:3px solid var(--gold);background:var(--surface);font-size:14px;color:var(--muted);max-width:70ch}
+footer{padding-block:32px 48px;font-size:13px;color:var(--muted)}
+
+@media (max-width:560px){
+  .wp{grid-template-columns:1fr;gap:4px}
+  .code{padding-top:0}
+  .phases{grid-template-columns:1fr}
+  .budget .row{grid-template-columns:minmax(0,110px) 1fr 66px}
+}
+</style>
+
+<div class="wrap">
+  <div class="bar">
+    <nav class="crumbs" aria-label="Pages"><a class="back" href="../"><span data-l="fr">← Portfolio principal</span><span data-l="en">← Main portfolio</span></a><a class="back" href="../methode/"><span data-l="fr">Ma méthode de travail (modèles vides) →</span><span data-l="en">How I work (blank templates) →</span></a></nav>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button id="btn-fr" type="button" data-set="fr" aria-pressed="true">FR</button>
+      <button id="btn-en" type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="eyebrow">Google Project Management Certificate · 2026</div>
+    <h1><span data-l="fr">Travaux de formation</span><span data-l="en">Training work</span></h1>
+    <p class="intro"><span data-l="fr">Onze livrables que j'ai produits pendant ma formation, classés selon les phases d'un projet : lancement, planification, puis exécution et suivi.</span><span data-l="en">Eleven deliverables I produced during my training, grouped by project phase: launch, planning, then execution and monitoring.</span></p>
+    <p class="case"><span data-l="fr">Cas fil rouge : l'entreprise Office Green prépare le lancement de Plant Pals, un service de livraison de plantes. Mon rôle de cheffe de projet : bâtir le plan d'exploitation et de formation des équipes.</span><span data-l="en">Running case: the company Office Green is preparing to launch Plant Pals, a plant delivery service. My role as project manager: build the operations and team training plan.</span></p>
+    <nav class="phases" aria-label="Phases">
+      <a href="#lancement"><span class="n">3</span><span class="t"><span data-l="fr">Lancement</span><span data-l="en">Launch</span></span><span class="s"><span data-l="fr">Charte, parties prenantes, OKR</span><span data-l="en">Charter, stakeholders, OKRs</span></span></a>
+      <a href="#planification"><span class="n">6</span><span class="t"><span data-l="fr">Planification</span><span data-l="en">Planning</span></span><span class="s"><span data-l="fr">WBS, Gantt, budget, risques, SoW, RACI</span><span data-l="en">WBS, Gantt, budget, risks, SoW, RACI</span></span></a>
+      <a href="#execution"><span class="n">2</span><span class="t"><span data-l="fr">Exécution et suivi</span><span data-l="en">Execution and monitoring</span></span><span class="s"><span data-l="fr">Escalade, analyse ROAM</span><span data-l="en">Escalation, ROAM analysis</span></span></a>
+    </nav>
+  </header>
+
+  <!-- ============ LANCEMENT ============ -->
+  <section id="lancement" aria-labelledby="h-l">
+    <h2 id="h-l"><span data-l="fr">1. Lancement du projet</span><span data-l="en">1. Project launch</span></h2>
+    <p class="lede"><span data-l="fr">Définir pourquoi on lance le projet, ce qu'il doit livrer et qui il concerne.</span><span data-l="en">Define why the project exists, what it must deliver and who it affects.</span></p>
+
+    <article class="wp" id="L-01">
+      <div class="code">L-01</div>
+      <div>
+        <h3><span data-l="fr">Charte de projet : Plant Pals, plan d'exploitation et de formation</span><span data-l="en">Project charter: Plant Pals operations and training plan</span></h3>
+        <p data-l="fr">Rédaction de la charte qui cadre le projet : résumé, objectif SMART, livrables, justification, bénéfices et coûts, périmètre, équipe et critères de réussite.</p>
+        <p data-l="en">Wrote the charter that frames the project: summary, SMART goal, deliverables, business case, benefits and costs, scope, team and success criteria.</p>
+        <ul class="did" data-l="fr">
+          <li>Objectif SMART : 100 % des équipes vente et marketing formées et prêtes avant la date de lancement.</li>
+          <li>3 livrables : plan d'exploitation, programme de formation, supports (guides, procédures).</li>
+          <li>Critère de réussite : lancement à la date prévue avec plus de 90 % de clients satisfaits.</li>
+        </ul>
+        <ul class="did" data-l="en">
+          <li>SMART goal: 100% of sales and marketing staff trained and ready before launch day.</li>
+          <li>3 deliverables: operations plan, training programme, materials (guides, procedures).</li>
+          <li>Success criterion: on-time launch with customer satisfaction above 90%.</li>
+        </ul>
+        <ul class="kpis">
+          <li><b>100 %</b><span data-l="fr">des équipes formées</span><span data-l="en">of staff trained</span></li>
+          <li><b>&gt; 90 %</b><span data-l="fr">satisfaction visée</span><span data-l="en">target satisfaction</span></li>
+          <li><b>+5 %</b><span data-l="fr">de chiffre d'affaires attendu</span><span data-l="en">expected revenue</span></li>
+        </ul>
+        <figure class="doc port">
+          <a href="docs/L-01-charte-projet.pdf" target="_blank" rel="noopener"><img src="img/L-01-charte-projet.jpg" alt="Aperçu du document L-01" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Project Charter », complété par mes soins.</span><span data-l="en">Google template: “Project Charter”, completed by me.</span> <a href="docs/L-01-charte-projet.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">cadrage · objectifs SMART · périmètre et exclusions</span><span data-l="en">scoping · SMART goals · scope and exclusions</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="L-02">
+      <div class="code">L-02</div>
+      <div>
+        <h3><span data-l="fr">Analyse des parties prenantes et grille pouvoir-intérêt</span><span data-l="en">Stakeholder analysis and power-interest grid</span></h3>
+        <p data-l="fr">Analyse de 5 parties prenantes (rôle, implication, impact, pouvoir, intérêt), puis placement sur la grille pouvoir-intérêt et choix d'un mode d'engagement pour chacune.</p>
+        <p data-l="en">Analysed 5 stakeholders (role, involvement, impact, power, interest), placed them on the power-interest grid and chose an engagement approach for each.</p>
+        <ul class="did" data-l="fr">
+          <li>Directeur des produits (pouvoir et intérêt élevés) : gestion étroite, réunions hebdomadaires et rapports d'avancement.</li>
+          <li>Concepteur paysagiste / web : risque de résistance au changement repéré ; ateliers et consultation sur les décisions techniques.</li>
+          <li>Investisseurs : rapports trimestriels et indicateurs ; réceptionniste : information ponctuelle et formation avant le lancement.</li>
+        </ul>
+        <ul class="did" data-l="en">
+          <li>Director of Product (high power, high interest): managed closely with weekly meetings and progress reports.</li>
+          <li>Landscape / web designer: flagged a risk of resistance to change; workshops and consultation on technical decisions.</li>
+          <li>Investors: quarterly reports and KPIs; receptionist: one-off updates and training before launch.</li>
+        </ul>
+        <ul class="kpis">
+          <li><b>5</b><span data-l="fr">parties prenantes analysées</span><span data-l="en">stakeholders analysed</span></li>
+          <li><b>4</b><span data-l="fr">stratégies d'engagement</span><span data-l="en">engagement strategies</span></li>
+        </ul>
+        <figure class="doc land">
+          <a href="docs/L-02-parties-prenantes.pdf" target="_blank" rel="noopener"><img src="img/L-02-parties-prenantes.jpg" alt="Aperçu du document L-02" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Stakeholder analysis and power grid », complété par mes soins.</span><span data-l="en">Google template: “Stakeholder analysis and power grid”, completed by me.</span> <a href="docs/L-02-parties-prenantes.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">gestion des parties prenantes · conduite du changement</span><span data-l="en">stakeholder management · change management</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="L-03">
+      <div class="code">L-03</div>
+      <div>
+        <h3><span data-l="fr">OKR du projet « Move It » : nouvelles lignes de bus</span><span data-l="en">“Move It” project OKRs: new bus lines</span></h3>
+        <p data-l="fr">Sur un second cas (5 nouvelles lignes de bus pour la ville fictive de Wonder City), rédaction de 4 objectifs et de 12 résultats clés mesurables et datés.</p>
+        <p data-l="en">On a second case (5 new bus lines for the fictional Wonder City), wrote 4 objectives and 12 measurable, time-bound key results.</p>
+        <ul class="did" data-l="fr">
+          <li>Desservir au moins 60 % des zones les plus denses en 24 mois.</li>
+          <li>Organiser 4 consultations publiques et recueillir 500 retours citoyens en 6 mois ; viser 80 % d'approbation.</li>
+          <li>Atteindre 95 % de ponctualité et 4,5/5 de satisfaction au premier trimestre.</li>
+        </ul>
+        <ul class="did" data-l="en">
+          <li>Serve at least 60% of the densest areas within 24 months.</li>
+          <li>Hold 4 public consultations and collect 500 citizen responses in 6 months; aim for 80% approval.</li>
+          <li>Reach 95% on-time service and 4.5/5 satisfaction in the first quarter.</li>
+        </ul>
+        <ul class="kpis">
+          <li><b>4</b><span data-l="fr">objectifs</span><span data-l="en">objectives</span></li>
+          <li><b>12</b><span data-l="fr">résultats clés</span><span data-l="en">key results</span></li>
+        </ul>
+        <figure class="doc port">
+          <a href="docs/L-03-okr-move-it.pdf" target="_blank" rel="noopener"><img src="img/L-03-okr-move-it.jpg" alt="Aperçu du document L-03" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Project Move It OKRs », complété par mes soins.</span><span data-l="en">Google template: “Project Move It OKRs”, completed by me.</span> <a href="docs/L-03-okr-move-it.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">définition d'objectifs · indicateurs de performance · concertation publique</span><span data-l="en">goal setting · KPI definition · public consultation</span></div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ PLANIFICATION ============ -->
+  <section id="planification" aria-labelledby="h-p">
+    <h2 id="h-p"><span data-l="fr">2. Planification</span><span data-l="en">2. Planning</span></h2>
+    <p class="lede"><span data-l="fr">Découper le travail, le planifier, le chiffrer, anticiper les risques et répartir les responsabilités.</span><span data-l="en">Break down the work, schedule it, cost it, anticipate risks and assign responsibilities.</span></p>
+
+    <article class="wp" id="P-01">
+      <div class="code">P-01</div>
+      <div>
+        <h3><span data-l="fr">Structure de découpage du projet (WBS)</span><span data-l="en">Work breakdown structure (WBS)</span></h3>
+        <p data-l="fr">Découpage du projet en 3 jalons et 9 tâches, chacune attribuée à un responsable et décrite : logistique de livraison, installation du logiciel et de l'équipement, programme de formation.</p>
+        <p data-l="en">Broke the project into 3 milestones and 9 tasks, each assigned to an owner and described: delivery logistics, software and equipment installation, training programme.</p>
+        <ul class="kpis">
+          <li><b>3</b><span data-l="fr">jalons</span><span data-l="en">milestones</span></li>
+          <li><b>9</b><span data-l="fr">tâches</span><span data-l="en">tasks</span></li>
+          <li><b>6</b><span data-l="fr">rôles responsables</span><span data-l="en">owner roles</span></li>
+        </ul>
+        <figure class="doc land">
+          <a href="docs/P-01-wbs.pdf" target="_blank" rel="noopener"><img src="img/P-01-wbs.jpg" alt="Aperçu du document P-01" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Use a WBS to create project tasks and milestones », complété par mes soins.</span><span data-l="en">Google template: “Use a WBS to create project tasks and milestones”, completed by me.</span> <a href="docs/P-01-wbs.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">découpage du travail · attribution des tâches</span><span data-l="en">work breakdown · task assignment</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="P-02">
+      <div class="code">P-02</div>
+      <div>
+        <h3><span data-l="fr">Diagramme de Gantt</span><span data-l="en">Gantt chart</span></h3>
+        <p data-l="fr">Passage de la WBS au calendrier : tâches, responsables, dates et durées, sur 15 semaines (mars à juin) réparties en 3 phases.</p>
+        <p data-l="en">Turned the WBS into a schedule: tasks, owners, dates and durations over 15 weeks (March to June) in 3 phases.</p>
+        <ul class="kpis">
+          <li><b>15</b><span data-l="fr">semaines</span><span data-l="en">weeks</span></li>
+          <li><b>3</b><span data-l="fr">phases</span><span data-l="en">phases</span></li>
+        </ul>
+        <figure class="doc land">
+          <a href="docs/P-02-gantt.pdf" target="_blank" rel="noopener"><img src="img/P-02-gantt.jpg" alt="Aperçu du document P-02" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Gantt chart », complété par mes soins.</span><span data-l="en">Google template: “Gantt chart”, completed by me.</span> <a href="docs/P-02-gantt.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">planification · gestion du calendrier</span><span data-l="en">scheduling · timeline management</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="P-03">
+      <div class="code">P-03</div>
+      <div>
+        <h3><span data-l="fr">Budget du projet : 62 000 $</span><span data-l="en">Project budget: $62,000</span></h3>
+        <p data-l="fr">Chiffrage de chaque tâche (main-d'œuvre, matériel, coûts fixes) par jalon, avec une réserve pour imprévus.</p>
+        <p data-l="en">Costed every task (labour, materials, fixed costs) by milestone, with a contingency reserve.</p>
+        <div class="budget" role="img" aria-label="Budget : logistique 35 400 $, logiciel et équipement 15 000 $, formation 8 000 $, réserve 3 600 $">
+          <div class="row"><span data-l="fr">Logistique</span><span data-l="en">Logistics</span><div class="track"><div class="fill" style="width:57.1%"></div></div><span class="val">35 400 $</span></div>
+          <div class="row"><span data-l="fr">Logiciel et équipement</span><span data-l="en">Software and equipment</span><div class="track"><div class="fill" style="width:24.2%"></div></div><span class="val">15 000 $</span></div>
+          <div class="row"><span data-l="fr">Formation</span><span data-l="en">Training</span><div class="track"><div class="fill" style="width:12.9%"></div></div><span class="val">8 000 $</span></div>
+          <div class="row res"><span data-l="fr">Réserve</span><span data-l="en">Reserve</span><div class="track"><div class="fill" style="width:5.8%"></div></div><span class="val">3 600 $</span></div>
+        </div>
+        <ul class="kpis">
+          <li><b>62 000 $</b><span data-l="fr">budget cible</span><span data-l="en">target budget</span></li>
+          <li><b>7</b><span data-l="fr">postes chiffrés</span><span data-l="en">cost lines</span></li>
+          <li><b>5,8 %</b><span data-l="fr">de réserve</span><span data-l="en">contingency</span></li>
+        </ul>
+        <figure class="doc land">
+          <a href="docs/P-03-budget.pdf" target="_blank" rel="noopener"><img src="img/P-03-budget.jpg" alt="Aperçu du document P-03" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Project budget », complété par mes soins.</span><span data-l="en">Google template: “Project budget”, completed by me.</span> <a href="docs/P-03-budget.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">estimation des coûts · budgétisation · réserve pour aléas</span><span data-l="en">cost estimation · budgeting · contingency planning</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="P-04">
+      <div class="code">P-04</div>
+      <div>
+        <h3><span data-l="fr">Plan de gestion des risques</span><span data-l="en">Risk management plan</span></h3>
+        <p data-l="fr">Identification des risques de dépassement budgétaire et de retard de formation, évaluation avec une matrice probabilité-impact, puis choix d'une stratégie de réponse pour chaque scénario.</p>
+        <p data-l="en">Identified budget-overrun and training-delay risks, rated them on a probability-impact matrix and chose a response strategy for each scenario.</p>
+        <ul class="did" data-l="fr">
+          <li>Hausse du prix des camions (risque élevé) : <b>éviter</b>, en comparant plusieurs fournisseurs et en négociant avant l'achat.</li>
+          <li>Tarif fournisseur plus élevé de 20 à 25 % (risque moyen) : <b>réduire</b>, avec plusieurs devis et un suivi régulier des coûts.</li>
+          <li>Livraison perdue (risque moyen) : <b>transférer</b>, par une clause d'assurance ou de responsabilité dans le contrat.</li>
+        </ul>
+        <ul class="did" data-l="en">
+          <li>Truck prices rising (high risk): <b>avoid</b>, by comparing suppliers and negotiating before purchase.</li>
+          <li>Supplier charging 20–25% more (medium risk): <b>reduce</b>, with several quotes and regular cost tracking.</li>
+          <li>Lost delivery (medium risk): <b>transfer</b>, through an insurance or liability clause in the contract.</li>
+        </ul>
+        <ul class="kpis">
+          <li><b>2</b><span data-l="fr">catégories de risques</span><span data-l="en">risk categories</span></li>
+          <li><b>3</b><span data-l="fr">stratégies : éviter, réduire, transférer</span><span data-l="en">strategies: avoid, reduce, transfer</span></li>
+        </ul>
+        <figure class="doc port">
+          <a href="docs/P-04-plan-risques.pdf" target="_blank" rel="noopener"><img src="img/P-04-plan-risques.jpg" alt="Aperçu du document P-04" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Risk management plan », complété par mes soins.</span><span data-l="en">Google template: “Risk management plan”, completed by me.</span> <a href="docs/P-04-plan-risques.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">analyse des risques · matrice probabilité-impact · plans d'atténuation</span><span data-l="en">risk analysis · probability-impact matrix · mitigation plans</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="P-05">
+      <div class="code">P-05</div>
+      <div>
+        <h3><span data-l="fr">Énoncé des travaux (SoW) pour le fournisseur</span><span data-l="en">Statement of work (SoW) for the vendor</span></h3>
+        <p data-l="fr">Rédaction du document contractuel qui encadre le fournisseur chargé d'installer le logiciel et l'équipement de la chaîne d'approvisionnement : activités, exclusions, livrables, jalons, charge, échéance et conditions de paiement.</p>
+        <p data-l="en">Wrote the contract document for the vendor installing the supply chain software and equipment: activities, exclusions, deliverables, milestones, effort, deadline and payment terms.</p>
+        <ul class="kpis">
+          <li><b>8</b><span data-l="fr">livrables définis</span><span data-l="en">deliverables defined</span></li>
+          <li><b>5</b><span data-l="fr">exclusions explicites</span><span data-l="en">explicit exclusions</span></li>
+          <li><b>80 h</b><span data-l="fr">en 10 jours ouvrés</span><span data-l="en">over 10 working days</span></li>
+        </ul>
+        <figure class="doc port">
+          <a href="docs/P-05-sow.pdf" target="_blank" rel="noopener"><img src="img/P-05-sow.jpg" alt="Aperçu du document P-05" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Statement of Work (SoW) », complété par mes soins.</span><span data-l="en">Google template: “Statement of Work (SoW)”, completed by me.</span> <a href="docs/P-05-sow.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">gestion des fournisseurs · rédaction contractuelle · critères d'acceptation</span><span data-l="en">vendor management · contract writing · acceptance criteria</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="P-06">
+      <div class="code">P-06</div>
+      <div>
+        <h3><span data-l="fr">Matrice RACI : stratégie marketing et ventes</span><span data-l="en">RACI chart: marketing and sales strategy</span></h3>
+        <p data-l="fr">Répartition des rôles sur 4 livrables de la phase 1, avec un seul responsable final (A) par tâche.</p>
+        <p data-l="en">Assigned roles across 4 phase-1 deliverables, with a single accountable owner (A) per task.</p>
+        <div class="tbl">
+          <table>
+            <thead><tr>
+              <th><span data-l="fr">Livrable</span><span data-l="en">Deliverable</span></th>
+              <th><span data-l="fr">Dir. produits</span><span data-l="en">Product dir.</span></th>
+              <th><span data-l="fr">Resp. marketing</span><span data-l="en">Marketing lead</span></th>
+              <th><span data-l="fr">Coord. marketing</span><span data-l="en">Marketing coord.</span></th>
+              <th><span data-l="fr">Rédacteur</span><span data-l="en">Copywriter</span></th>
+              <th><span data-l="fr">Chef des ventes</span><span data-l="en">Sales lead</span></th>
+              <th><span data-l="fr">Dir. ventes</span><span data-l="en">Sales dir.</span></th>
+            </tr></thead>
+            <tbody>
+              <tr><td><span data-l="fr">Plan marketing</span><span data-l="en">Marketing plan</span></td><td>C</td><td class="a">A</td><td class="r">R</td><td>C</td><td>C</td><td>I</td></tr>
+              <tr><td><span data-l="fr">Texte promotionnel</span><span data-l="en">Promotional copy</span></td><td>I</td><td class="a">A</td><td>C</td><td class="r">R</td><td>I</td><td>I</td></tr>
+              <tr><td><span data-l="fr">Outils marketing</span><span data-l="en">Marketing tools</span></td><td>C</td><td class="a">A</td><td class="r">R</td><td>C</td><td>I</td><td>I</td></tr>
+              <tr><td><span data-l="fr">Accueil des clients</span><span data-l="en">Customer onboarding</span></td><td>C</td><td class="a">A</td><td>C</td><td>I</td><td class="r">R</td><td>–</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="doc land">
+          <a href="docs/P-06-raci.pdf" target="_blank" rel="noopener"><img src="img/P-06-raci.jpg" alt="Aperçu du document P-06" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « RACI chart », complété par mes soins.</span><span data-l="en">Google template: “RACI chart”, completed by me.</span> <a href="docs/P-06-raci.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">responsabilités (RACI) · organisation d'équipe</span><span data-l="en">accountability (RACI) · team organisation</span></div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ EXECUTION ============ -->
+  <section id="execution" aria-labelledby="h-e">
+    <h2 id="h-e"><span data-l="fr">3. Exécution et suivi</span><span data-l="en">3. Execution and monitoring</span></h2>
+    <p class="lede"><span data-l="fr">Réagir quand un problème menace le projet, et suivre les risques jusqu'à leur résolution.</span><span data-l="en">Respond when a problem threatens the project, and track risks until they are resolved.</span></p>
+
+    <article class="wp" id="E-01">
+      <div class="code">E-01</div>
+      <div>
+        <h3><span data-l="fr">E-mail d'escalade : pénurie de chauffeurs-livreurs</span><span data-l="en">Escalation email: delivery driver shortage</span></h3>
+        <p data-l="fr">Pendant les livraisons tests, le manque de chauffeurs faisait tomber les livraisons à l'heure à 80 %. J'ai rédigé l'e-mail d'escalade adressé à la direction des opérations, aux RH et au vice-président : constat chiffré, conséquences si rien ne change, deux solutions et une demande de décision sous 24 heures.</p>
+        <p data-l="en">During test deliveries, a driver shortage pushed on-time deliveries down to 80%. I wrote the escalation email to the operations director, HR and the senior VP: the facts in numbers, the consequences if nothing changes, two options and a request for a decision within 24 hours.</p>
+        <ul class="did" data-l="fr">
+          <li>Option 1, avec les RH : recrutement d'urgence de chauffeurs temporaires ou recours à un prestataire externe.</li>
+          <li>Option 2, avec les opérations : ajuster la taille des lots tests et optimiser les tournées.</li>
+        </ul>
+        <ul class="did" data-l="en">
+          <li>Option 1, with HR: emergency hiring of temporary drivers or an external delivery partner.</li>
+          <li>Option 2, with operations: adjust test batch sizes and optimise delivery rounds.</li>
+        </ul>
+        <ul class="kpis">
+          <li><b>80 % → 90 %</b><span data-l="fr">livraisons à l'heure, objectif</span><span data-l="en">on-time deliveries, target</span></li>
+          <li><b>3</b><span data-l="fr">décideurs sollicités</span><span data-l="en">decision-makers</span></li>
+          <li><b>15 min</b><span data-l="fr">de réunion demandée</span><span data-l="en">meeting requested</span></li>
+        </ul>
+        <figure class="doc port">
+          <a href="docs/E-01-email-escalade.pdf" target="_blank" rel="noopener"><img src="img/E-01-email-escalade.jpg" alt="Aperçu du document E-01" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « Escalation Email », complété par mes soins.</span><span data-l="en">Google template: “Escalation Email”, completed by me.</span> <a href="docs/E-01-email-escalade.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">communication de crise · escalade · aide à la décision</span><span data-l="en">crisis communication · escalation · decision support</span></div>
+      </div>
+    </article>
+
+    <article class="wp" id="E-02">
+      <div class="code">E-02</div>
+      <div>
+        <h3><span data-l="fr">Analyse ROAM des problèmes du lancement test</span><span data-l="en">ROAM analysis of test-launch issues</span></h3>
+        <p data-l="fr">Classement de 7 problèmes (qualité des rempotages, plaintes, panne logicielle, résiliations, manque de chauffeurs, retards, budget) selon la méthode ROAM : résolu, pris en charge, accepté ou atténué.</p>
+        <p data-l="en">Classified 7 issues (potting quality, complaints, software fault, cancellations, driver shortage, late deliveries, budget) with the ROAM method: resolved, owned, accepted or mitigated.</p>
+        <ul class="roam">
+          <li><b>R</b><span data-l="fr">Résolu × 2</span><span data-l="en">Resolved × 2</span></li>
+          <li><b>O</b><span data-l="fr">Pris en charge × 2</span><span data-l="en">Owned × 2</span></li>
+          <li><b>A</b><span data-l="fr">Accepté × 1</span><span data-l="en">Accepted × 1</span></li>
+          <li><b>M</b><span data-l="fr">Atténué × 2</span><span data-l="en">Mitigated × 2</span></li>
+        </ul>
+        <figure class="doc land">
+          <a href="docs/E-02-roam.pdf" target="_blank" rel="noopener"><img src="img/E-02-roam.jpg" alt="Aperçu du document E-02" loading="lazy"></a>
+          <figcaption><span data-l="fr">Modèle Google : « ROAM Analysis », complété par mes soins.</span><span data-l="en">Google template: “ROAM Analysis”, completed by me.</span> <a href="docs/E-02-roam.pdf" target="_blank" rel="noopener"><span data-l="fr">Voir le document (PDF)</span><span data-l="en">View the document (PDF)</span></a></figcaption>
+        </figure>
+        <div class="tags"><b data-l="fr">Compétences :</b><b data-l="en">Skills:</b> <span data-l="fr">suivi des risques et des problèmes · priorisation</span><span data-l="en">risk and issue tracking · prioritisation</span></div>
+      </div>
+    </article>
+  </section>
+
+  <p class="note"><span data-l="fr">Note : ces travaux ont été réalisés pendant le Google Project Management Certificate (Coursera, 2026), à partir de scénarios fictifs fournis par la formation (Office Green, Plant Pals, Wonder City). Les chiffres sont des objectifs ou des estimations du scénario, et non des résultats mesurés. Chaque fiche montre le modèle fourni par la formation, complété par mes soins.</span><span data-l="en">Note: this work was completed during the Google Project Management Certificate (Coursera, 2026), based on fictional scenarios provided by the course (Office Green, Plant Pals, Wonder City). Figures are scenario targets or estimates, not measured results. Each entry shows the course template, completed by me.</span></p>
+
+  <footer>Flore Thouanguem Gutihte · Lausanne · judithflore@yahoo.com · linkedin.com/in/floresuisse</footer>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function set(l){
+    root.setAttribute('data-lang',l); root.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    try{localStorage.setItem('pf-lang',l);}catch(e){}
+  }
+  var start='fr';
+  {try{var s=localStorage.getItem('pf-lang'); if(s==='en'||s==='fr')start=s;}catch(e){}}
+  set(start);
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click',function(){set(b.dataset.set);});
+  });
+})();
+</script>
+
+</body></html>
